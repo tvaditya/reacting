@@ -40,9 +40,9 @@ export const HeadLine = styled.div`
     display: flex;
     align-items: center;
     
-    span {
-        color: #1F5FA3
-    }
+    //span {
+    //    color: #1F5FA3
+    //}
     `
 export const SubHeadLine = styled.p`
     font-size: 24px;
@@ -55,14 +55,14 @@ export const LogoImage = styled.img`
     margin-right: 8px;
     `
 
-export const Titulo = styled.h1`
-    color: #000;
-    //font-family: Raleway;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    `
+// export const Titulo = styled.h1`
+//     color: #000;
+//     //font-family: Raleway;
+//     font-size: 40px;
+//     font-style: normal;
+//     font-weight: 800;
+//     line-height: normal;
+//     `
 
 export const SubTitulo = styled.p`
     color: rgba(53, 56, 62, 0.50);
@@ -71,33 +71,33 @@ export const SubTitulo = styled.p`
     //line-weight: normal;
     `
 
-export const Tarefa = styled.div`
-    display: flex;
-    width: 410px;
-    padding: 15px;
-    align-items: center;
-    gap: 15px;
-    //border-radius: 11.25px;
-    //background: rgba(53, 56, 62, 0.05);
-    
-    border-radius: 22.5px;
-    background: rgba(53, 56, 62, 0.05);
-    
-    svg{
-        background: rgba(53, 56, 62, 0.10);
-        padding: 8px;
-        widht: 35px;
-        border-radius: 12.5px;
-        height: 35px;
-        cursor: pointer;
-    }
-    
-     p {
-         font-size: 20px;
-         font-weight: 700;
-         color: #35383E;
-     }
-`
+// export const Tarefa = styled.div`
+//     display: flex;
+//     width: 410px;
+//     padding: 15px;
+//     align-items: center;
+//     gap: 15px;
+//     //border-radius: 11.25px;
+//     //background: rgba(53, 56, 62, 0.05);
+//
+//     border-radius: 22.5px;
+//     background: rgba(53, 56, 62, 0.05);
+//
+//     svg{
+//         background: rgba(53, 56, 62, 0.10);
+//         padding: 8px;
+//         widht: 35px;
+//         border-radius: 12.5px;
+//         height: 35px;
+//         cursor: pointer;
+//     }
+//
+//      p {
+//          font-size: 20px;
+//          font-weight: 700;
+//          color: #35383E;
+//      }
+// `
 
 export const TarefaInfo = styled.input`
     display: flex;

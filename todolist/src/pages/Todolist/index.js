@@ -1,27 +1,29 @@
-import TodoListImg from './assets/logo.png';
-import {Titulo, Container, MainContainer,
+
+import { Container, MainContainer,
     LeftContainer, RightContainer, LogoImage,
     SubHeadLine, HeadLine, SubTitulo, TarefaInfo} from './styles';
-import Tarefa from './components/Tarefa';
-import Titulo from './components/Titulo';
+
+import TodoListImg from '../../assets/logo.png';
+import Tarefa from '../../components/Tarefa';
+import Titulo from '../../components/Titulo';
 
 import {useState, useRef, useEffect} from "react";
 import axios from "axios";
 
 
 
-export default function App() {
+export default function Index() {
   // const tasks = [{id:Date.now() + '_' + Math.random(),text: "Tarefa anterior"},
   //     {id:Date.now() + '_' + Math.random(), text: "Tarefa nova"}]
   const [tasks, setTasks] = useState([]);
 
   const taskText = useRef("");
 
-  async function removeTask(id) {
-        console.log("Removendo tarefa...")
-        await axios.delete(`https://plataforma.universodev.com.br/api/todolist/${id}`)
-        setTasks(tasks.filter((task) => task.id !== id));
-    }
+  // async function removeTask(id) {
+  //       console.log("Removendo tarefa...")
+  //       await axios.delete(`https://plataforma.universodev.com.br/api/todolist/${id}`)
+  //       setTasks(tasks.filter((task) => task.id !== id));
+  //   }
     useEffect(() => {
       async function listTasks() {
         const {data: taskList} = await axios.get('https://plataforma.universodev.com.br/api/todolist/')
@@ -44,7 +46,7 @@ export default function App() {
         <Container>
             <LeftContainer>
                 <HeadLine>
-                    <LogoImage src={TodoListImg}/>
+                    <LogoImage src={TodoListImg} alt={"Logo TodoList"}/>
                     <Titulo>Organize sua vida com <span>simplicidade e eficiência</span></Titulo>
                 </HeadLine>
                 <SubHeadLine>Adicione ao lado as tarefas que deseja fazer hoje e não pare até ela estar vazia!</SubHeadLine>
@@ -68,4 +70,4 @@ export default function App() {
   );
 }
 
-// export default App;
+// export default Index;
