@@ -1,7 +1,10 @@
 import TodoListImg from './assets/logo.png';
 import {Titulo, Container, MainContainer,
     LeftContainer, RightContainer, LogoImage,
-    SubHeadLine, HeadLine, SubTitulo, Tarefa, TarefaInfo} from './styles';
+    SubHeadLine, HeadLine, SubTitulo, TarefaInfo} from './styles';
+import Tarefa from './components/Tarefa';
+import Titulo from './components/Titulo';
+
 import {useState, useRef, useEffect} from "react";
 import axios from "axios";
 
